@@ -1,0 +1,218 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "DM Sans";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--pure-white);
+}
+
+.first-container, .pricing{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+     width: 37.5rem;
+     background-color: var(--pure-black);
+     color: var(--pure-white);
+}
+.linear{
+    position: absolute;
+    width: 12.8rem;
+    height: 0.6rem;
+    background: var(--main-accent);
+    margin-left: 3rem;
+    margin-top: -0.4rem;
+}
+.pricing{
+    padding: 7.5rem 2.8rem 7.2rem 2.9rem;
+    gap: 1.6rem;
+}
+.pricing h1{
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    letter-spacing: 0.3rem;
+}
+.pricing p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.second-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.slicer-div{
+    margin-top: 6.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3.2rem;
+    align-items: center;
+    width: 25.5rem;
+}
+
+.slicer-div p{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--pure-black);
+}
+.Yearly{
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 6.4rem;
+    height: 3.2rem;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light-grey);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 2.4rem;
+    width: 2.4rem;
+    left: 0.4rem;
+    bottom: 0.4rem;
+    background-color: var(--pure-black);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  
+  input:checked + .slider {
+    background-color: var(--pure-black);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: var(--pure-white);
+  }
+  
+  .slider.round {
+    border-radius: 1.6rem;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .same{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31.8rem;
+    padding: 5.6rem 2.2rem 4rem 2.1rem;
+    flex-direction: column;
+  }
+
+  .same h1{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    color: var(--pure-black);
+  }
+  .pro-div h1{
+    color: var(--pure-white);
+  }
+  .pro-div p{
+    color: var(--pure-white);
+  }
+.same p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    mix-blend-mode: normal;
+    text-align: center;
+    opacity: 0.6;
+    margin-top: 1.8rem;
+}
+  .business-div, .basic-div{
+    background-color: var(--light-grey);
+    margin-top: 2.4rem;
+  }
+
+  .pro-div{
+    margin-top: 2.4rem;
+    background-color: var(--pure-black);
+    border-top: 6px solid;
+    border-image: linear-gradient(103deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%) 1;
+  }
+.price h1{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.4rem;
+    margin-top: 4rem;
+    color: var(--pure-black);
+}
+.price p{
+    margin-top: 0;
+}
+.pro-price h1{
+    color: var(--pure-white);
+}
+.pro-price p{
+    color: var(--pure-white);
+    margin-top: 0;
+}
+.plan{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+    width: 24.5rem;
+    height: 4rem;
+    background-color: var(--pure-black);
+
+}
+.plan p{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--pure-white);
+    opacity: 1;
+    margin:auto;
+}
+.pro-plan{
+    background-color: var(--pure-white);
+}
+.pro-plan p{
+    color: var(--pure-black);
+}
