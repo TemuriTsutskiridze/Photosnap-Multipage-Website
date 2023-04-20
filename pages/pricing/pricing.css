@@ -1,3 +1,7 @@
+:root{
+    --dark-grey: #f5f5f5;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -63,14 +67,12 @@ body{
 h1{
     font-weight: 700;
 }
-
 .slicer-div{
     margin-top: 6.4rem;
     flex-direction: row;
     gap: 3.2rem;
     width: 25.5rem;
 }
-
 .slicer-div p{
     font-weight: 700;
     font-size: 1.8rem;
@@ -167,7 +169,7 @@ h1{
     margin-top: 1.8rem;
 }
   .business-div, .basic-div{
-    background-color: var(--light-grey);
+    background-color: var(--dark-grey);
     margin-top: 2.4rem;
   }
 
@@ -199,7 +201,12 @@ h1{
     width: 24.5rem;
     height: 4rem;
     background-color: var(--pure-black);
+    cursor: pointer;
 }
+.plan:hover{
+    background-color: #DFDFDF;
+}
+
 .plan p{
     font-weight: 700;
     font-size: 1.2rem;
@@ -230,7 +237,7 @@ h1{
 
 .features-div{
     width: 31.8rem;
-    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
 }
 
 .features-div p{
@@ -374,6 +381,7 @@ h1{
      .price p{
         text-align: end;
      }
+
      .first-title::before{
         content: "COMPARE";
         display: flex;
@@ -388,8 +396,10 @@ h1{
      }
      .title-features{
         margin-top: 6.4rem;
+        padding-left: 2.4rem;
     } 
     .features-div{
+        padding-left: 2.4rem;
         width: 68.9rem;
         display: flex;
         justify-content: space-between;
@@ -418,6 +428,7 @@ h1{
     }
     .last-container{
         width: 76.8rem;
+        margin-top: 11.2rem;
         background-image:url(../../shared/assets/tablet/bg-beta.jpg);
         background-repeat: no-repeat;
         padding:0 4rem 6.8rem 0;
@@ -447,6 +458,97 @@ h1{
         margin-top: 0;
         height: 28rem;
         margin-left: 0;
-    }
+    }  
+}
+
+@media only screen and (min-width: 1440px) {
+    .first-container, .pricing{
+        width: 144rem;
+       } 
+       .first-container{
+           flex-direction: row;
+       }
+       .image-hero{
+           background: url(assets/desktop/hero.jpg);
+           background-repeat: no-repeat;
+           width: 225rem;
+       }
+       .pricing{
+           padding: 17.3rem 11rem;
+       }
+       .slicer-div{
+           margin-top: 12rem;
+       }
+
+
+       .desktop-version-divs{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-top: 4.8rem;
+       }
+       .same{
+        align-items: center;
+        width: 35rem;
+        margin-top: 4rem;
+      }
+
+      .business-div, .basic-div{
+        margin-top: 3rem;
+        padding: 5.6rem 4rem 4rem 4rem;
+      }
     
+      .pro-div{
+        padding: 8.8rem  4rem 7rem 4rem;
+        margin-top: 0;
+        background-color: var(--pure-black);
+        border-top: 6px solid;
+        border-left: none;
+        border-image: linear-gradient(103deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%) 1;
+      }
+
+      .price{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+     .price p{
+        text-align: center;
+     }
+     .same p{
+        text-align: center;
+    }
+
+
+
+     .first-title::before{
+           margin-top: 16rem;
+           
+        }
+        .title-features{
+           margin-top: 5.6rem; 
+           padding-left: 2.4rem;
+       } 
+       .features-div{
+        padding-left: 2.4rem;
+           width: 73.1rem;
+       }
+       .invite-div{
+        gap: 50rem;
+    }
+       .last-container{
+        margin-top: 16rem;
+           width: 144rem;
+           background-image:url(../../shared/assets/desktop/bg-beta.jpg);
+           background-repeat: no-repeat;
+           padding:0 16.5rem 6.8rem 0;
+       }
+       .last-container h1{
+           margin-left: 16.5rem;
+       }
+       .last-line{
+           height: 28rem;
+       } 
+     
 }
