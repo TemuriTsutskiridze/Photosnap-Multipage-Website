@@ -1,17 +1,17 @@
 `use strict`;
 
 const open = document.querySelector(`#open`);
-const close = document.querySelector(`#close`);
 const menu = document.querySelector(`#menu-mob`);
+let opened = false;
 
 open.addEventListener(`click`, () => {
-  menu.classList.remove(`invisible`);
-  close.classList.remove(`invisible`);
-  open.classList.add(`invisible`);
-});
-
-close.addEventListener(`click`, () => {
-  menu.classList.add(`invisible`);
-  close.classList.add(`invisible`);
-  open.classList.remove(`invisible`);
+  if (!opened) {
+    menu.classList.remove(`invisible`);
+    open.src = "../../shared/assets/mobile/close.svg";
+    opened = true;
+  } else {
+    menu.classList.add(`invisible`);
+    open.src = "../../shared/assets/mobile/menu.svg";
+    opened = false;
+  }
 });
