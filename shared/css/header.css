@@ -1,8 +1,11 @@
 header {
+  position: fixed;
+  min-width: 100vw;
+  background-color: var(--pure-white);
   font-style: normal;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   text-align: center;
   letter-spacing: 2.5px;
   display: flex;
@@ -41,21 +44,21 @@ header {
   align-items: center;
   justify-content: center;
 }
-a {
+.header-links {
   color: var(--pure-black);
   text-decoration: none;
   cursor: pointer;
 }
 
-a:hover {
+.header-links:hover {
   color: var(--light-grey);
 }
 
-ul {
+.header-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 .divider {
   width: 87%;
@@ -82,8 +85,8 @@ ul {
 }
 @media only screen and (min-width: 768px) {
   header {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     letter-spacing: 2px;
   }
   .invisible {
@@ -98,7 +101,7 @@ ul {
   .top-div {
     width: 170px;
   }
-  .container {
+  .header-container {
     width: 89.7%;
     height: 72px;
     display: flex;
@@ -109,9 +112,9 @@ ul {
     flex-direction: row;
     justify-content: space-around;
   }
-  ul {
+  .header-list {
     flex-direction: row;
-    gap: 37px;
+    gap: 3.7rem;
   }
   .invite {
     width: 158px;
@@ -119,7 +122,7 @@ ul {
   }
 }
 @media only screen and (min-width: 1440px) {
-  .container {
+  .header-container {
     width: 77%;
   }
 }
