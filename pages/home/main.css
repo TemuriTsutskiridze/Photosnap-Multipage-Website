@@ -4,12 +4,17 @@ html{
 }
 body{
     font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .black_div{
     background-color: var(--pure-black);
+    position: relative;
 }
 .black_div,.white_div1,.white_div2{
     padding: 72px 24px 72px 33px;
+    width: 375px;
 }
 .black_h1,.white_h1{
     font-weight: 700;
@@ -73,8 +78,9 @@ body{
     background: var(--main-accent);
     width: 128px;
     height: 6px;
-    position: relative;
-    top: -72px;
+    position: absolute;
+    left: 33px;
+    top: 0;
 }
 .little_h1,.third_h1{
     font-weight: 700;
@@ -92,6 +98,7 @@ body{
 }
 .mountains,.sunset,.voyage,.architect{
     background-repeat: no-repeat;
+    width: 375px;
 }
 .mountains{
     background-image:url(/pages/stories/assets/mobile/mountains.jpg) ;
@@ -134,5 +141,84 @@ body{
 }
 .last_div2,.last_div3{
     margin-top: 56px;
+}
+
+@media(min-width : 768px){
+    .for_row1,.for_row3{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .for_row2,.for_row{
+        display: flex;
+    }
+    .for_gradient{
+        position: absolute;
+        top: 187px;
+        left: 0;
+        height: 30.4em;
+        width: 0.6em;
+    }
+    .black_h1{
+        font-size: 4em;
+    }
+    .black_div,.white_div1,.white_div2{
+        width: 495px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .white_div1,.white_div2{
+        height: 600px;
+    }
+    .white_div2,.black_div,.white_div1{
+        padding: 72px 54px 72px 33px;
+    }
+    .white_div1 p {
+        width: 387px;
+    }
+    .img,.img2,.img3{
+        background-repeat: no-repeat;
+        width: 273px;
+    }
+    .img{
+        background-image: url(./assets/tablet/create-and-share.jpg);
+    }
+    .img2{
+        background-image: url(./assets/tablet/beautiful-stories.jpg);
+    }
+    .img3{
+        background-image: url(./assets/tablet/designed-for-everyone.jpg);
+    }
+    .mountains{
+        background-image: url(/pages/stories/assets/desktop/mountains.jpg);
+        padding: 327px 14px 34px 28px;
+    }
+    .architect{
+        background-image: url(/pages/stories/assets/desktop/architecturals.jpg);
+        padding: 344px 14px 34px 28px;
+    }
+    .voyage{
+        background-image: url(/pages/stories/assets/desktop/18-days-voyage.jpg);
+        padding: 342px 23px 40px 19px;
+    }
+    .sunset{
+        background-image: url(/pages/stories/assets/desktop/cityscapes.jpg);
+        padding: 327px 14px 34px 28px;
+    }
+    .mountains,.voyage,.architect,.sunset{
+        width: 384px;
+        background-size: cover;
+    }
+    .line{
+        width: 302px;
+    }
+    .four_a{
+        gap: 167px;
+        justify-content: start;
+    }
+    .third_p{
+        width: 32.7em;
+    }
 }
 
