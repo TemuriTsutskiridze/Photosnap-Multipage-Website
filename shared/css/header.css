@@ -20,7 +20,7 @@ header {
 }
 .burger-menu-wrapper {
   width: 100vw;
-  height: 253px;
+  height: 25.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,13 +43,6 @@ header {
 }
 #menu-mob {
   background-color: var(--pure-white);
-  position: fixed;
-  transition: transform 1s ease-in-out;
-  transform: translateX(-200%);
-  z-index: 0;
-}
-#menu-mob.active {
-  transform: translateX(0%);
 }
 
 .header-links {
@@ -90,7 +83,7 @@ header {
 .menu-btn {
   position: relative;
   width: 30px;
-  height: 20px;
+  height: 34px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -121,12 +114,28 @@ header {
   transform: rotate(-45deg);
   bottom: 50%;
 }
+@media screen and (max-width: 768px) {
+  #menu-mob {
+    transition: transform 1s ease-in-out;
+    transform: translateX(-200%);
+  }
+  #menu-mob.active {
+    transform: translateX(0%);
+  }
+}
 
 @media only screen and (min-width: 768px) {
   header {
     font-size: 1.2rem;
     line-height: 1.5rem;
     letter-spacing: 2px;
+  }
+
+  #menu-mob {
+    transition: 0;
+    position: static;
+    transform: translateX(0%);
+    z-index: 1;
   }
   .invisible {
     display: flex;
