@@ -1,6 +1,5 @@
 footer {
   width: 100%;
-  height: 54rem;
   min-width: 100vw;
   font-style: normal;
   font-weight: 700;
@@ -12,18 +11,19 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5.6rem 0;
 }
-.logo {
+.footer-logo {
   margin-bottom: 3.3rem;
 }
 
-.logo path:first-child {
+.footer-logo path:first-child {
   fill: var(--pure-white);
 }
-.icon path {
+.footer-icon path {
   fill: var(--pure-white);
 }
-.arrow g {
+.footer-arrow g {
   stroke: var(--pure-white);
 }
 
@@ -43,7 +43,7 @@ footer {
   fill: url(#f);
 }
 
-p {
+.footer-info {
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
@@ -74,14 +74,14 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
-.icons {
+.footer-icons {
   width: 15.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1.3rem;
 }
-.invite-arr {
+.footer-invite-arr {
   display: flex;
   flex-direction: row;
   gap: 2.2rem;
@@ -89,9 +89,10 @@ p {
 }
 @media only screen and (min-width: 768px) {
   footer {
-    height: 284px;
+    padding: 6.4rem 0;
   }
-  .logo {
+
+  .footer-logo {
     margin: 0;
   }
   .footer-container {
@@ -108,39 +109,35 @@ p {
     margin-top: 3.2rem;
     margin-bottom: 7.3rem;
   }
-  .item1 {
+  .footer-item1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
 
-  .item2 {
+  .footer-item2 {
     grid-row: 3 / 3;
     grid-column: 1 / 2;
   }
 
-  .item3 {
+  .footer-item3 {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
   }
 
-  .item4 {
+  .footer-item4 {
     grid-row: 1 / 3;
     grid-column: 2 / 2;
     justify-content: flex-end;
   }
 
-  .item5 {
+  .footer-item5 {
     grid-row: 3 / 3;
     grid-column: 2 / 2;
   }
 }
 @media only screen and (min-width: 1440px) {
-  footer {
-    height: 250px;
-  }
   .footer-container {
     width: 77%;
-    height: 121px;
     grid-template-columns: 17rem 46rem 25.5rem;
     grid-template-rows: repeat(2, auto);
     column-gap: 10.9rem;
@@ -154,32 +151,32 @@ p {
     margin: 0;
     align-items: flex-start;
   }
-  .invite-arr {
+  .footer-invite-arr {
     margin: 0;
   }
 
-  .item1 {
+  .footer-item1 {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
   }
 
-  .item2 {
+  .footer-item2 {
     grid-row: 2 / 2;
     grid-column: 1 / 3;
   }
 
-  .item3 {
+  .footer-item3 {
     grid-area: 1 / 2 / 3 / 3;
     grid-column: 2 / 3;
   }
 
-  .item4 {
+  .footer-item4 {
     grid-row: 1 / 2;
     grid-column: 3 / 3;
     justify-content: flex-end;
   }
 
-  .item5 {
+  .footer-item5 {
     grid-row: 2 / 2;
     grid-column: 3 / 3;
   }

@@ -12,7 +12,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.top-div {
+.header-top-div {
   width: 100vw;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
-.menu {
+.header-menu {
   width: 87%;
   height: 72px;
   display: flex;
@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
 }
 
-.burger-menu {
+.header-burger-menu {
   width: 82.7%;
   display: flex;
   flex-direction: column;
@@ -61,13 +61,13 @@ header {
   align-items: center;
   gap: 2rem;
 }
-.divider {
+.header-divider {
   width: 87%;
   height: 1px;
   background-color: var(--pure-black);
   opacity: 25%;
 }
-.invite {
+.header-invite {
   width: 87%;
   height: 48px;
   background-color: var(--pure-black);
@@ -76,7 +76,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.invite:hover {
+.header-invite:hover {
   background-color: var(--light-grey);
   color: var(--pure-black);
 }
@@ -114,7 +114,7 @@ header {
   transform: rotate(-45deg);
   bottom: 50%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #menu-mob {
     transition: transform 1s ease-in-out;
     transform: translateX(-200%);
@@ -130,23 +130,15 @@ header {
     line-height: 1.5rem;
     letter-spacing: 2px;
   }
-
-  #menu-mob {
-    transition: 0;
-    position: static;
-    transform: translateX(0%);
-    z-index: 1;
-  }
-  .invisible {
+  .header-invisible {
     display: flex;
   }
-  #open,
-  #close,
-  .divider {
+  .header-divider,
+  .menu-btn {
     display: none;
   }
-  .menu,
-  .top-div {
+  .header-menu,
+  .header-top-div {
     width: 170px;
   }
   .header-container {
@@ -164,7 +156,7 @@ header {
     flex-direction: row;
     gap: 3.7rem;
   }
-  .invite {
+  .header-invite {
     width: 158px;
     height: 40px;
   }
