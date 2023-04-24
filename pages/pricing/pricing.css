@@ -1,0 +1,562 @@
+:root{
+    --dark-grey: #f5f5f5;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "DM Sans";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--pure-white);
+    overflow-x: hidden;
+}
+
+.first-container, .pricing{
+    justify-content: center;
+    align-items: start;
+     width: 37.5rem;
+     background-color: var(--pure-black);
+     color: var(--pure-white);
+}
+.image-hero{
+    background: url(assets/mobile/hero.jpg);
+    background-repeat: no-repeat;
+    width: 37.5rem;
+    height: 30rem;
+}
+.linear{
+    position: absolute;
+    width: 12.8rem;
+    height: 0.6rem;
+    background: var(--main-accent);
+    margin-left: 3rem;
+    margin-top: -0.6rem;
+}
+.pricing{
+    padding: 7.5rem 2.8rem 7.2rem 2.9rem;
+    gap: 1.6rem;
+}
+.pricing h1{
+    font-size: 3.2rem;
+    line-height: 0.8em;
+    letter-spacing: 0.3rem;
+}
+.pricing p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.second-container, .slicer-div, .same, .plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-container, .first-container, .pricing, .same{
+    flex-direction: column;
+}
+.first-container, .pricing, .check-icons, .last-container, .arrow{
+    display: flex;
+}
+h1{
+    font-weight: 700;
+}
+.slicer-div{
+    margin-top: 6.4rem;
+    flex-direction: row;
+    gap: 3.2rem;
+    width: 25.5rem;
+}
+.slicer-div p{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.5em;
+}
+.month{
+    color: var(--pure-black);
+}
+.Yearly{
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 6.4rem;
+    height: 3.2rem;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light-grey);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 2.4rem;
+    width: 2.4rem;
+    left: 0.4rem;
+    bottom: 0.4rem;
+    background-color: var(--pure-black);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  
+  input:checked + .slider {
+    background-color: var(--pure-black);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: var(--pure-white);
+  }
+  
+  .slider.round {
+    border-radius: 1.6rem;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/*containers basic pro and business */
+
+  .same{
+    width: 31.8rem;
+    padding: 5.6rem 2.2rem 4rem 2.1rem;
+  }
+
+  .same h1{
+    font-size: 2.4rem;
+    line-height: 0.96em;
+    color: var(--pure-black);
+  }
+  .pro-div h1{
+    color: var(--pure-white);
+  }
+  .pro-div p{
+    color: var(--pure-white);
+  }
+.same p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.66em;
+    mix-blend-mode: normal;
+    text-align: center;
+    opacity: 0.6;
+    margin-top: 1.8rem;
+}
+.desktop-version-divs{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 4rem;
+   }
+  .business-div, .basic-div{
+    background-color: var(--dark-grey);
+  }
+
+  .pro-div{
+    background-color: var(--pure-black);
+    border-top: 6px solid;
+    border-image: linear-gradient(103deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%) 1;
+  }
+
+.price h1{
+    font-size: 4rem;
+    line-height: 1.2em;
+    letter-spacing: 0.4rem;
+    margin-top: 4rem;
+    color: var(--pure-black);
+}
+.price p{
+    margin-top: 0;
+}
+.pro-price h1{
+    color: var(--pure-white);
+}
+.pro-price p{
+    color: var(--pure-white);
+    margin-top: 0;
+}
+.plan{
+    margin-top: 4rem;
+    width: 24.5rem;
+    height: 4rem;
+    background-color: var(--pure-black);
+    cursor: pointer;
+}
+.plan:hover{
+    background-color: #DFDFDF;
+}
+
+.plan:hover p{
+    color: var(--pure-black);
+}
+
+.plan p{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.33em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--pure-white);
+    opacity: 1;
+    margin: auto;
+}
+.pro-plan{
+    background-color: var(--pure-white);
+}
+.pro-plan p{
+    color: var(--pure-black);
+}
+/*features div*/
+.title-features{
+    margin-top: 6.2rem;
+    padding-bottom: 2.3rem;
+    text-transform:uppercase ;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.33em;
+    letter-spacing: 0.2rem;
+    border-bottom: 1px solid black;
+}
+
+.features-div{
+    width: 31.8rem;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.features-div p{
+    padding-top: 2.3rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.33em;
+    letter-spacing: 0.2rem;
+    color: var(--pure-black);
+}
+.check-icons{
+    flex-direction: row;
+    margin-top: 3.7rem;
+   justify-content: space-between;
+   margin-right: 8.5rem;
+    padding-bottom: 2.3rem;
+}
+
+.basic::before, .business::before, .pro::before{
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3em;
+    letter-spacing: 0.16rem;
+    position: absolute;   
+    margin-top: -2rem;
+}
+.pro::before{
+    content: "PRO";
+}
+.business::before{
+    content: "BUSINESS";
+}
+.basic::before{
+    content: "BASIC";
+}
+/*last container before footer*/
+
+.last-container{
+    width: 37.5rem;
+    height: 28.8rem;
+    background-image:url(../../shared/assets/mobile/bg-beta.jpg);
+    padding: 0 3.2rem 6.4rem 3.3rem;
+    color: var(--pure-white);
+    margin-top: 6.4rem;
+}
+.last-container h1{
+    font-size: 3.2rem;
+    line-height: 1.25em;
+    letter-spacing: 0.33rem;
+    text-transform: uppercase;
+    margin-top: 6.4rem;
+}
+.arrow{
+    flex-direction: row;
+    margin-top: 2.4rem;
+    gap: 1.6rem;
+}
+.arrow-icon{
+    filter: invert(1);
+}
+.last-container p{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.33em;
+    letter-spacing: 0.2rem;
+    color: var(--pure-white);
+}
+.last-line{
+    margin-top: 0;
+    margin-left: 0;
+}
+.pro-basic-business{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+
+   .first-container, .pricing{
+     width: 76.8rem;
+    } 
+    .first-container{
+        flex-direction: row;
+    }
+    .image-hero{
+        background: url(assets/tablet/hero.jpg);
+        background-repeat: no-repeat;
+        height: 49rem;
+        order: 2;
+        width: 45rem;
+    }
+    .linear{
+        position: relative;
+        width: 0.6rem;
+        height: 14.4rem;
+        margin-left: 0;
+        margin-top: 17.3rem;
+    }
+    .pricing{
+        padding: 17.3rem 5.4rem;
+        gap: 2.1rem;
+    }
+    .pricing h1{
+        font-size: 4rem;
+        line-height: 1.2em;
+        letter-spacing: 0.41rem;
+    }
+    .pricing p{
+       width: 38rem;
+    }
+    .slicer-div{
+        margin-top: 11.2rem;
+    }
+    .same{
+        width: 68.9rem;
+        padding: 4rem 4.8rem 4rem 4rem;
+        align-items: flex-start;
+      }
+    
+    .same p{
+        text-align: start;
+        width: 28rem;
+    }
+    .pro-div{
+        border-top: 0;
+        border-left: 6px solid;
+        border-image: linear-gradient(10deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%) 1;
+    } 
+
+    .plan{
+        margin-top: 3.2rem;
+        width: 27rem;
+    }
+    .plan p{
+        text-align: center;
+    }
+    .price{
+        text-align: end;
+        margin-left: 30rem;
+        margin-top: -16rem;
+        margin-bottom: 5rem;
+    }
+     .price p{
+        text-align: end;
+     }
+
+     .first-title::before{
+        content: "COMPARE";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 11.2rem;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 1.2em;
+        text-align: center;
+        letter-spacing: 0.41rem;
+     }
+     .title-features{
+        margin-top: 6.4rem;
+        padding-left: 2.4rem;
+    } 
+    .features-div{
+        padding-left: 2.4rem;
+        width: 68.9rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        border-top: 1px solid #DFDFDF;
+    }
+    .check-icons{
+        flex-direction: row;
+        margin-top: 2.5rem;
+        gap: 12.4rem;
+        margin-right: 6.2rem;
+        padding-bottom: 2.5rem;
+    }
+    .basic::before, .business::before, .pro::before{
+       display: none;
+    }
+    .pro-basic-business{
+        display: flex;
+        gap: 9.8rem;
+        margin-right: 3.1rem;
+    }
+    .row-titles-for-tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .last-container{
+        width: 76.8rem;
+        margin-top: 11.2rem;
+        background-image:url(../../shared/assets/tablet/bg-beta.jpg);
+        background-repeat: no-repeat;
+        padding:0 4rem 6.8rem 0;
+    }
+    .invite-div{
+        display: flex;
+        flex-direction: row;
+        gap: 9rem;
+        align-items: center;
+        margin-top: 6.8rem;
+    }
+    .last-container h1{
+        font-size: 4rem;
+        line-height: 1.2em;
+        letter-spacing: 0.41rem;
+        margin-left: 3.9rem;
+        width: 40rem;
+        margin-top: 0;
+    }
+    .arrow{
+        margin-top: 0;
+    }
+    .arrow-icon{
+        filter: invert(1);
+    }
+    .last-line{
+        margin-top: 0;
+        height: 28rem;
+        margin-left: 0;
+    }  
+}
+
+@media only screen and (min-width: 1440px) {
+    .first-container, .pricing{
+        width: 144rem;
+       } 
+       .first-container{
+           flex-direction: row;
+       }
+       .image-hero{
+           background: url(assets/desktop/hero.jpg);
+           background-repeat: no-repeat;
+           width: 225rem;
+       }
+       .pricing{
+           padding: 17.3rem 11rem;
+       }
+       .slicer-div{
+           margin-top: 12rem;
+       }
+       .desktop-version-divs{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-top: 4.8rem;
+        align-items: center;
+       }
+       .same{
+        align-items: center;
+        width: 35rem;
+      }
+
+      .business-div, .basic-div{
+        margin-top: 0;
+        padding: 5.6rem 4rem 4rem;
+      }
+    
+      .pro-div{
+        padding: 8.8rem  4rem 7.1rem 4rem;
+        margin-top: 0;
+        background-color: var(--pure-black);
+        border-top: 6px solid;
+        border-left: none;
+        border-image: linear-gradient(103deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%) 1;
+      }
+      .price{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+     .price p{
+        text-align: center;
+     }
+     .same p{
+        text-align: center;
+    }
+     .first-title::before{
+           margin-top: 16rem;
+           
+        }
+        .title-features{
+           margin-top: 5.6rem; 
+           padding-left: 2.4rem;
+       } 
+       .features-div{
+        padding-left: 2.4rem;
+           width: 73.1rem;
+       }
+       .invite-div{
+        gap: 50rem;
+    }
+       .last-container{
+        margin-top: 16rem;
+           width: 144rem;
+           background-image:url(../../shared/assets/desktop/bg-beta.jpg);
+           background-repeat: no-repeat;
+           padding:0 16.5rem 6.8rem 0;
+       }
+       .last-container h1{
+           margin-left: 16.5rem;
+       }
+       .last-line{
+           height: 28rem;
+       } 
+     
+}
