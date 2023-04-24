@@ -44,7 +44,7 @@ body{
 }
 .pricing h1{
     font-size: 3.2rem;
-    line-height: 4rem;
+    line-height: 0.8em;
     letter-spacing: 0.3rem;
 }
 .pricing p{
@@ -77,7 +77,7 @@ h1{
 .slicer-div p{
     font-weight: 700;
     font-size: 1.8rem;
-    line-height: 2.5rem;
+    line-height: 2.5em;
 }
 .month{
     color: var(--pure-black);
@@ -153,7 +153,7 @@ h1{
 
   .same h1{
     font-size: 2.4rem;
-    line-height: 2.5rem;
+    line-height: 0.96em;
     color: var(--pure-black);
   }
   .pro-div h1{
@@ -165,7 +165,7 @@ h1{
 .same p{
     font-weight: 400;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 1.66em;
     mix-blend-mode: normal;
     text-align: center;
     opacity: 0.6;
@@ -189,7 +189,7 @@ h1{
 
 .price h1{
     font-size: 4rem;
-    line-height: 4.8rem;
+    line-height: 1.2em;
     letter-spacing: 0.4rem;
     margin-top: 4rem;
     color: var(--pure-black);
@@ -222,7 +222,7 @@ h1{
 .plan p{
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 1.6rem;
+    line-height: 1.33em;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     color: var(--pure-white);
@@ -242,7 +242,7 @@ h1{
     text-transform:uppercase ;
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 1.6rem;
+    line-height: 1.33em;
     letter-spacing: 0.2rem;
     border-bottom: 1px solid black;
 }
@@ -256,7 +256,7 @@ h1{
     padding-top: 2.3rem;
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 1.6rem;
+    line-height: 1.33em;
     letter-spacing: 0.2rem;
     color: var(--pure-black);
 }
@@ -272,7 +272,7 @@ h1{
     opacity: 0.5;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.3em;
     letter-spacing: 0.16rem;
     position: absolute;   
     margin-top: -2rem;
@@ -298,7 +298,7 @@ h1{
 }
 .last-container h1{
     font-size: 3.2rem;
-    line-height: 4rem;
+    line-height: 1.25em;
     letter-spacing: 0.33rem;
     text-transform: uppercase;
     margin-top: 6.4rem;
@@ -314,7 +314,7 @@ h1{
 .last-container p{
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 1.6rem;
+    line-height: 1.33em;
     letter-spacing: 0.2rem;
     color: var(--pure-white);
 }
@@ -354,7 +354,7 @@ h1{
     }
     .pricing h1{
         font-size: 4rem;
-        line-height: 4.8rem;
+        line-height: 1.2em;
         letter-spacing: 0.41rem;
     }
     .pricing p{
@@ -404,7 +404,7 @@ h1{
         margin-top: 11.2rem;
         font-weight: 700;
         font-size: 4rem;
-        line-height: 4.8rem;
+        line-height: 1.2em;
         text-align: center;
         letter-spacing: 0.41rem;
      }
@@ -456,7 +456,7 @@ h1{
     }
     .last-container h1{
         font-size: 4rem;
-        line-height: 4.8rem;
+        line-height: 1.2em;
         letter-spacing: 0.41rem;
         margin-left: 3.9rem;
         width: 40rem;
@@ -493,8 +493,6 @@ h1{
        .slicer-div{
            margin-top: 12rem;
        }
-
-
        .desktop-version-divs{
         display: flex;
         flex-direction: row;
@@ -520,9 +518,6 @@ h1{
         border-left: none;
         border-image: linear-gradient(103deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%) 1;
       }
-      /* .basic-div, .business-div{
-        height: 40.7rem;
-      } */
       .price{
         text-align: center;
         margin-left: 0;
