@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,9 @@ body{
     background-color: var(--pure-white);
     overflow-x: hidden;
 }
-
+.first-container{
+    margin-top: 7.2rem;
+}
 .first-container, .pricing{
     justify-content: center;
     align-items: start;
@@ -286,13 +288,13 @@ h1{
 .basic::before{
     content: "BASIC";
 }
-/*last container before footer*/
 
 .last-container{
-    width: 37.5rem;
+    width: 100vw;
     height: 28.8rem;
     background-image:url(../../shared/assets/mobile/bg-beta.jpg);
     padding: 0 3.2rem 6.4rem 3.3rem;
+    background-size: cover;
     color: var(--pure-white);
     margin-top: 6.4rem;
 }
@@ -331,6 +333,9 @@ h1{
    .first-container, .pricing{
      width: 76.8rem;
     } 
+    .first-container{
+        margin-top: 7.2rem;
+    }
     .first-container{
         flex-direction: row;
     }
@@ -441,18 +446,21 @@ h1{
         justify-content: space-between;
     }
     .last-container{
-        width: 76.8rem;
+        width: 100vw;
         margin-top: 11.2rem;
         background-image:url(../../shared/assets/tablet/bg-beta.jpg);
         background-repeat: no-repeat;
-        padding:0 4rem 6.8rem 0;
+        background-size: cover;
+        padding:0 0 0 0;
+        height: auto;
     }
     .invite-div{
         display: flex;
         flex-direction: row;
-        gap: 9rem;
+        justify-content: space-between;
+        width: 100vw;
+        padding-right: 4rem;
         align-items: center;
-        margin-top: 6.8rem;
     }
     .last-container h1{
         font-size: 4rem;
@@ -464,6 +472,7 @@ h1{
     }
     .arrow{
         margin-top: 0;
+        gap: 1.6rem;
     }
     .arrow-icon{
         filter: invert(1);
@@ -543,17 +552,19 @@ h1{
            width: 73.1rem;
        }
        .invite-div{
-        gap: 50rem;
+        padding-right: 16.6rem;
     }
        .last-container{
-        margin-top: 16rem;
-           width: 144rem;
+            margin-top: 16rem;
+           width: 100vw;
            background-image:url(../../shared/assets/desktop/bg-beta.jpg);
            background-repeat: no-repeat;
-           padding:0 16.5rem 6.8rem 0;
+           background-size: cover;
+           padding:0 0 0 0;
        }
        .last-container h1{
            margin-left: 16.5rem;
+           margin-top: 0;
        }
        .last-line{
            height: 28rem;

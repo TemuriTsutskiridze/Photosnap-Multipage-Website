@@ -91,17 +91,22 @@ footer {
   footer {
     padding: 6.4rem 0;
   }
+  
+  .footer-invite-arr {
+    gap: 1.6rem;
+  }
 
   .footer-logo {
     margin: 0;
   }
   .footer-container {
-    width: 89.5%;
+    width: 100vw;
     display: grid;
     grid-template-columns: 30.2rem 25.5rem;
     grid-template-rows: repeat(3, auto);
     column-gap: 12.1rem;
     align-items: baseline;
+    padding: 0 4rem;
   }
   .footer-list {
     flex-direction: row;
@@ -137,13 +142,14 @@ footer {
 }
 @media only screen and (min-width: 1440px) {
   .footer-container {
-    width: 77%;
+    width: 100vw;
     grid-template-columns: 17rem 46rem 25.5rem;
     grid-template-rows: repeat(2, auto);
     column-gap: 10.9rem;
     row-gap: 8.5rem;
     /* column-gap: ; */
     align-items: baseline;
+    padding: 0 16.6rem;
   }
   .footer-list {
     flex-direction: column;
