@@ -8,6 +8,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
+main{
+    margin-top: 7.2rem;
+}
 .black_div{
     background-color: var(--pure-black);
     position: relative;
@@ -129,20 +132,20 @@ a:hover{
     cursor: pointer;
 }
 .mountains{
-    background-image:url(/pages/stories/assets/mobile/mountains.jpg) ;
+    background-image:url(../stories/assets/mobile/mountains.jpg) ;
     padding: 236px 14px 34px 41px;
 }
 .sunset{
-    background-image: url(/pages/stories/assets/mobile/cityscapes.jpg);
+    background-image: url(../stories/assets/mobile/cityscapes.jpg);
     padding: 221px 14px 50px 41px;
 }
 .voyage{
-    background-image: url(/pages/stories/assets/desktop/18-days-voyage.jpg);
+    background-image: url(../stories/assets/mobile/18-days-voyage.jpg);
     padding: 342px 23px 40px 33px;;
     background-size: cover;
 }
 .architect{
-    background-image: url(/pages/stories/assets/mobile/architecturals.jpg);
+    background-image: url(../stories/assets/mobile/architecturals.jpg);
     padding: 236px 14px 77px 41px;
 }
 .line{
@@ -173,6 +176,9 @@ a:hover{
 
 
 @media(min-width : 768px){
+    .footer-list{
+        align-items: baseline;
+    }
     .for_row1,.for_row3{
         display: flex;
         flex-direction: row-reverse;
@@ -220,19 +226,19 @@ a:hover{
         background-image: url(./assets/tablet/designed-for-everyone.jpg);
     }
     .mountains{
-        background-image: url(/pages/stories/assets/desktop/mountains.jpg);
+        background-image: url(../stories/assets/desktop/mountains.jpg);
         padding: 327px 14px 34px 28px;
     }
     .architect{
-        background-image: url(/pages/stories/assets/desktop/architecturals.jpg);
+        background-image: url(../stories/assets/desktop/architecturals.jpg);
         padding: 344px 14px 34px 28px;
     }
     .voyage{
-        background-image: url(/pages/stories/assets/desktop/18-days-voyage.jpg);
+        background-image: url(../stories/assets/desktop/18-days-voyage.jpg);
         padding: 342px 23px 40px 19px;
     }
     .sunset{
-        background-image: url(/pages/stories/assets/desktop/cityscapes.jpg);
+        background-image: url(../stories/assets/desktop/cityscapes.jpg);
         padding: 327px 14px 34px 28px;
     }
     .story{
