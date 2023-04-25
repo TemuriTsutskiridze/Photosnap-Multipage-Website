@@ -91,9 +91,11 @@ footer {
   footer {
     padding: 6.4rem 0;
   }
+  
   .footer-invite-arr {
     gap: 1.6rem;
   }
+
   .footer-logo {
     margin: 0;
   }
