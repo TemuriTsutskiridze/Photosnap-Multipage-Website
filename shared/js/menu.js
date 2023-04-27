@@ -10,10 +10,18 @@ menuBtn.addEventListener("click", function () {
 });
 function showMenu() {
   if (menuBtn.classList.contains(`active`)) {
-    btn.src = `../../shared/assets/mobile/close.svg`;
+    if(window.location.pathname === "/"){
+      btn.src = `./shared/assets/mobile/close.svg`;
+    } else{
+      btn.src = `../../shared/assets/mobile/close.svg`;
+    }
     menu.classList.add("active");
   } else {
     menu.classList.remove("active");
-    btn.src = `../../shared/assets/mobile/menu.svg`;
+    if(window.location.pathname === "/"){
+      btn.src = `./shared/assets/mobile/menu.svg`;
+    } else{
+      btn.src = `../../shared/assets/mobile/menu.svg`;
+    }
   }
 }
