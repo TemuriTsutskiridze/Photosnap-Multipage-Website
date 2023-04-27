@@ -1,6 +1,9 @@
 html {
   font-size: 62.5%;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "DM Sans", sans-serif;
 }
@@ -10,16 +13,16 @@ main {
   font-style: normal;
   letter-spacing: 2px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  overflow-x: hidden;
 }
 main img {
   display: block;
 }
 .img {
   width: 375px;
-
   min-height: 294px;
   background-image: url(./assets/mobile/moon-of-appalacia.jpg);
   background-repeat: no-repeat;
@@ -37,6 +40,9 @@ main img {
   align-items: center;
   justify-content: center;
 }
+.main-info {
+  max-width: 375px;
+}
 .main-paragraphs {
   width: 100vw;
   padding: 4.8rem 0 4.8rem 2.9rem;
@@ -47,7 +53,7 @@ main img {
   line-height: 1.6rem;
   margin-bottom: 1.6rem;
 }
-h1 {
+.short {
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
@@ -81,6 +87,180 @@ h1 {
   cursor: pointer;
   margin-right: 1.6rem;
 }
+.black_a,
+.a {
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 15.72px;
+  letter-spacing: 2px;
+  color: var(--pure-black);
+  display: flex;
+  gap: 18px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.black_a {
+  color: var(--light-grey);
+}
+.four_a {
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.second_div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.little_h1,
+.third_h1 {
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 25px;
+  color: var(--pure-white);
+}
+.little_p {
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 16.93px;
+  letter-spacing: 0;
+  color: var(--pure-white);
+  margin: 0.4em 0em 1.06em;
+}
+.date {
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 16.93px;
+  letter-spacing: 0;
+  color: var(--pure-white);
+  margin: 0;
+}
+.story {
+  background-repeat: no-repeat;
+  width: 375px;
+  position: relative;
+  transition: 0.3s;
+  z-index: 0;
+}
+.story::after {
+  content: "";
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.27%,
+    rgba(0, 0, 0, 0.661222) 100%
+  );
+}
+.story::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 3.29%,
+    #5a77ff 43.33%
+  );
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.story:hover:before {
+  opacity: 1;
+}
+.story:hover {
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+.mountains {
+  background-image: url(../stories/assets/mobile/mountains.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.sunset {
+  background-image: url(../stories/assets/mobile/cityscapes.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.voyage {
+  background-image: url(../stories/assets/mobile/18-days-voyage.jpg);
+  padding: 214px 23px 40px 41px;
+  background-size: cover;
+}
+.architect {
+  background-image: url(../stories/assets/mobile/architecturals.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.world-tour {
+  background-image: url(../stories/assets/mobile/world-tour.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.unforeseen {
+  background-image: url(../stories/assets/mobile/unforeseen-corners.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.lion {
+  background-image: url(../stories/assets/mobile/king-on-africa.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.trip {
+  background-image: url(../stories/assets/mobile/trip-to-nowhere.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.sea {
+  background-image: url(../stories/assets/mobile/rage-of-the-sea.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.horse {
+  background-image: url(../stories/assets/mobile/running-free.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.waves {
+  background-image: url(../stories/assets/mobile/behind-the-waves.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.pink {
+  background-image: url(../stories/assets/mobile/calm-waters.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.galaxy {
+  background-image: url(../stories/assets/mobile/milky-way.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.forest {
+  background-image: url(../stories/assets/mobile/dark-forest.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.orange {
+  background-image: url(../stories/assets/mobile/somwarpet.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.blue {
+  background-image: url(../stories/assets/mobile/land-of-dreams.jpg);
+  padding: 214px 23px 40px 41px;
+}
+.line {
+  width: 318px;
+  height: 1px;
+  background-color: var(--light-grey);
+}
+.third_h1 {
+  text-align: center;
+  color: var(--pure-black);
+  padding: 48px 0px 16px;
+}
+.third_p {
+  text-align: center;
+  width: 310px;
+}
+
 @media only screen and (min-width: 768px) {
   .img {
     width: 768px;
@@ -91,6 +271,7 @@ h1 {
     background-color: transparent;
     position: absolute;
     width: 100%;
+    max-width: 768px;
   }
   .main-paragraphs {
     padding: 12.2rem 34.2rem 12.2rem 3.9rem;
@@ -102,10 +283,14 @@ h1 {
     width: 38ch;
   }
 }
+
 @media only screen and (min-width: 1440px) {
   .img {
     width: 1440px;
     background-image: url(./assets/desktop/moon-of-appalacia.jpg);
+  }
+  .main-info {
+    max-width: 1440px;
   }
   .main-paragraphs {
     padding-left: 11.2rem;
