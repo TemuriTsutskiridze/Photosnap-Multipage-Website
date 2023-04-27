@@ -1,0 +1,334 @@
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    margin-top: 7.2rem;
+}
+.black_div{
+    background-color: var(--pure-black);
+    position: relative;
+}
+.black_div,.white_div1,.white_div2{
+    padding: 72px 24px 72px 33px;
+    width: 375px;
+}
+.black_h1,.white_h1{
+    font-weight: 700;
+    font-size: 3.2em;
+    line-height: 1.25em;
+    letter-spacing: 0.10em;
+    text-align: left;
+}
+.white_h1{
+    width: 269px;
+}
+.img{
+    width: 375px;
+    min-height: 294px;
+    background-image: url(./assets/mobile/create-and-share.jpg);
+    background-repeat: no-repeat;
+}
+.img2{
+    width: 375px;
+    min-height:285px;
+    background-image: url(./assets/mobile/beautiful-stories.jpg);
+    background-repeat: no-repeat;
+}
+.img3{
+    width: 375px;
+    min-height: 271px;
+    background-image: url(./assets/mobile/designed-for-everyone.jpg);
+    background-repeat: no-repeat;
+}
+.black_h1{
+    color: var(--pure-white) ;
+}
+.black_p,.white_p,.third_p{
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 25px;
+    color: var(--pure-black) ;
+    opacity: 60%;
+    padding: 16px 0px 32px;
+}
+.black_p{
+    color:var(--light-grey);
+}
+.black_a,.a{
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 15.72px;
+    letter-spacing: 2px;
+    color: var(--pure-black) ;
+    display: flex;
+    gap: 18px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.black_a{
+    color:var(--light-grey); 
+}
+.four_a{
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.for_gradient{
+    background: var(--main-accent);
+    width: 128px;
+    height: 6px;
+    position: absolute;
+    left: 33px;
+    top: 0;
+}
+.little_h1,.third_h1{
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 25px;
+    color:var(--light-grey);
+}
+.little_p{
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 16.93px;
+    color:var(--light-grey);
+    opacity: 60%;
+    margin: 0.4em 0em 1.06em;
+}
+*{
+    box-sizing: border-box;
+}
+.story{
+    background-repeat: no-repeat;
+    width: 375px;
+    position: relative;
+    transition: 0.3s;
+    z-index: 0;
+}
+.story::after{
+    content: "";
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%);
+}
+.story::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 3.29%, #5A77FF 43.33%);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+.story:hover:before {
+    opacity: 1;
+}
+.story:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+.mountains{
+    background-image:url(../stories/assets/mobile/mountains.jpg) ;
+    padding: 236px 14px 34px 41px;
+}
+.sunset{
+    background-image: url(../stories/assets/mobile/cityscapes.jpg);
+    padding: 221px 14px 50px 41px;
+}
+.voyage{
+    background-image: url(../stories/assets/mobile/18-days-voyage.jpg);
+    padding: 342px 23px 40px 33px;;
+    background-size: cover;
+}
+.architect{
+    background-image: url(../stories/assets/mobile/architecturals.jpg);
+    padding: 194px 14px 77px 41px;
+}
+.line{
+    width:318px;
+    height: 1px;
+    background-color:var(--light-grey);
+}
+.third_h1{
+    text-align: center;
+    color: var(--pure-black) ;
+    padding: 48px 0px 16px;
+}
+.third_p{
+    text-align: center;
+    width: 310px;
+}
+.last_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.last_div1{
+    margin-top:80px;
+}
+.last_div2,.last_div3{
+    margin-top: 56px;
+}
+
+
+@media(min-width : 768px){
+    .footer-list{
+        align-items: baseline;
+    }
+    .for_row1,.for_row3{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .for_row2,.for_row{
+        display: flex;
+    }
+    .for_gradient{
+        position: absolute;
+        top: 187px;
+        left: 0;
+        height: 30.4em;
+        width: 0.6em;
+    }
+    .black_h1{
+        font-size: 4em;
+    }
+    .black_div,.white_div1,.white_div2{
+        width: 495px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .white_div1,.white_div2{
+        height: 600px;
+    }
+    .white_div2,.black_div,.white_div1{
+        padding: 72px 54px 72px 33px;
+    }
+    .white_div1 p {
+        width: 387px;
+    }
+    .second_div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img,.img2,.img3{
+        background-repeat: no-repeat;
+        width: 273px;
+    }
+    .img{
+        background-image: url(./assets/tablet/create-and-share.jpg);
+    }
+    .img2{
+        background-image: url(./assets/tablet/beautiful-stories.jpg);
+    }
+    .img3{
+        background-image: url(./assets/tablet/designed-for-everyone.jpg);
+    }
+    .mountains{
+        background-image: url(../stories/assets/desktop/mountains.jpg);
+        padding: 327px 14px 34px 28px;
+    }
+    .architect{
+        background-image: url(../stories/assets/desktop/architecturals.jpg);
+        padding: 344px 14px 34px 28px;
+    }
+    .voyage{
+        background-image: url(../stories/assets/desktop/18-days-voyage.jpg);
+        padding: 342px 23px 40px 19px;
+    }
+    .sunset{
+        background-image: url(../stories/assets/desktop/cityscapes.jpg);
+        padding: 327px 14px 34px 28px;
+    }
+    .story{
+        width: 384px;
+        background-size: cover;
+    }
+    .line{
+        width: 302px;
+    }
+    .four_a{
+        gap: 167px;
+        justify-content: start;
+    }
+    .third_p{
+        width: 32.7em;
+    }
+}
+@media(min-width:1440px){
+    .img{
+        background-image: url(./assets/desktop/create-and-share.jpg);
+    }
+    .img2{
+        background-image: url(./assets/desktop/beautiful-stories.jpg);
+    }
+    .img3{
+        background-image: url(./assets/desktop/designed-for-everyone.jpg); 
+    }
+    .black_div,.white_div1,.white_div2{
+        width: 610px;
+    }
+    .img,.img2,.img3{
+        width: 830px;
+    }
+    .black_h1,.white_h1{
+        font-size: 4em;
+        line-height: 1.2em;
+        letter-spacing: 0.10em;
+    }
+    .white_h1{
+        width: 340px;
+    }
+    .black_div,.white_div1,.white_div2{
+        padding: 173px 111px 72px 106px;
+    }
+    .black_p,.white_p{
+        padding: 21px 0px 48px;
+    }
+    .for_gradient{
+        top: 22rem;
+    }
+    .second_div{
+        display: flex;
+    }
+    .story{
+        width: 36em;
+    }
+    .third_div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 120px;
+    }
+    .third_p{
+        width: 370px;
+        text-align: center;
+    }
+    .last_div2{
+        margin-top: 120px;
+    }
+    .four_a{
+        gap: 143px;
+    }
+    .line{
+        width: 280px;
+    }
+    
+}
+
