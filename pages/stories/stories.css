@@ -282,6 +282,21 @@ a:hover {
   .big-text {
     width: 38ch;
   }
+  .second_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .story {
+    width: 384px;
+    background-size: cover;
+  }
+  .line {
+    width: 302px;
+  }
+  .four_a {
+    gap: 167px;
+    justify-content: start;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
