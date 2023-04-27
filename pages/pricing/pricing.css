@@ -67,6 +67,7 @@ body{
 .first-container, .pricing, .check-icons, .last-container, .arrow{
     display: flex;
 }
+
 h1{
     font-weight: 700;
 }
@@ -309,6 +310,10 @@ h1{
     flex-direction: row;
     margin-top: 2.4rem;
     gap: 1.6rem;
+    cursor: pointer;
+}
+.arrow:hover{
+    text-decoration: underline;
 }
 .arrow-icon{
     filter: invert(1);
