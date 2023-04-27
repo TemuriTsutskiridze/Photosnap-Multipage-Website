@@ -310,4 +310,80 @@ a:hover {
   .main-paragraphs {
     padding-left: 11.2rem;
   }
+  .second_div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .story {
+    width: 360px;
+  }
+  .line {
+    width: 280px;
+  }
+  .four_a {
+    gap: 147px;
+  }
+  .mountains {
+    background-image: url(../stories/assets/desktop/mountains.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .sunset {
+    background-image: url(../stories/assets/desktop/cityscapes.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .voyage {
+    background-image: url(../stories/assets/desktop/18-days-voyage.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .architect {
+    background-image: url(../stories/assets/desktop/architecturals.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .world-tour {
+    background-image: url(../stories/assets/desktop/world-tour.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .unforeseen {
+    background-image: url(../stories/assets/desktop/unforeseen-corners.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .lion {
+    background-image: url(../stories/assets/desktop/king-on-africa.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .trip {
+    background-image: url(../stories/assets/desktop/trip-to-nowhere.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .sea {
+    background-image: url(../stories/assets/desktop/rage-of-the-sea.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .horse {
+    background-image: url(../stories/assets/desktop/running-free.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .waves {
+    background-image: url(../stories/assets/desktop/behind-the-waves.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .pink {
+    background-image: url(../stories/assets/desktop/calm-waters.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .galaxy {
+    background-image: url(../stories/assets/desktop/milky-way.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .forest {
+    background-image: url(../stories/assets/desktop/dark-forest.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .orange {
+    background-image: url(../stories/assets/desktop/somwarpet.jpg);
+    padding: 340px 23px 40px 40px;
+  }
+  .blue {
+    background-image: url(../stories/assets/desktop/land-of-dreams.jpg);
+    padding: 340px 23px 40px 40px;
+  }
 }
