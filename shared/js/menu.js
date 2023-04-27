@@ -10,7 +10,7 @@ menuBtn.addEventListener("click", function () {
 });
 function showMenu() {
   if (menuBtn.classList.contains(`active`)) {
-    if(window.location.pathname === "/"){
+    if(window.location.pathname === "/Photosnap-Multipage-Website/index.html"){
       btn.src = `./shared/assets/mobile/close.svg`;
     } else{
       btn.src = `../../shared/assets/mobile/close.svg`;
@@ -18,7 +18,7 @@ function showMenu() {
     menu.classList.add("active");
   } else {
     menu.classList.remove("active");
-    if(window.location.pathname === "/"){
+    if(window.location.pathname === "/Photosnap-Multipage-Website/index.html"){
       btn.src = `./shared/assets/mobile/menu.svg`;
     } else{
       btn.src = `../../shared/assets/mobile/menu.svg`;
