@@ -10,6 +10,7 @@ body{
 main{
     margin-top: 64px;
 }
+
 .title_h1{
     text-align: center;
     color: var(--pure-black) ;
@@ -39,6 +40,9 @@ main{
 }
 
 @media(min-width: 768px){
+    .image-hero{
+        background-position: unset;
+    }
     .grid_container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
