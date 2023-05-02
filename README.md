@@ -28,12 +28,12 @@ This is a solution to the [Photosnap-Multipage-Website challenge on Frontend Men
 
 ### Screenshot
 
-![Image 1](./design/desktop-preview.jpg)
+![webpage preview](./preview/preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/TemuriTsutskiridze/Photosnap-Multipage-Website)
-- Live Site URL: [Add live site URL here](https://photosnap-multipage-website-self.vercel.app/)
+- Live Site URL: [github](https://temuritsutskiridze.github.io/Photosnap-Multipage-Website/)
+- live Site URL: [vercel](https://photosnap-multipage-website-virid.vercel.app/)
 
 ## My process
 
