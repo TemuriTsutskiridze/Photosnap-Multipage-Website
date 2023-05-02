@@ -31,16 +31,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    /* height: 30rem; */
     padding: 37%;
 }
 .linear{
-    /* position: absolute; */
     width: 12.8rem;
     height: 0.6rem;
     background: var(--main-accent);
     margin-left: 3rem;
-    /* margin-top: -0.6rem; */
 }
 .pricing{
     padding: 7.5rem 2.8rem 7.2rem 2.9rem;
