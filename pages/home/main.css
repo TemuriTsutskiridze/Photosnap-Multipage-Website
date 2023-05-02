@@ -10,6 +10,7 @@ body{
 }
 main{
     margin-top: 7.2rem;
+    width: 100vw;
 }
 .black_div{
     background-color: var(--pure-black);
@@ -17,7 +18,7 @@ main{
 }
 .black_div,.white_div1,.white_div2{
     padding: 72px 24px 72px 33px;
-    width: 375px;
+    width: 100%;
 }
 .black_h1,.white_h1{
     font-weight: 700;
@@ -25,27 +26,25 @@ main{
     line-height: 1.25em;
     letter-spacing: 0.10em;
     text-align: left;
+    width: 318px;
 }
 .white_h1{
     width: 269px;
 }
-.img{
-    width: 375px;
-    min-height: 294px;
-    background-image: url(./assets/mobile/create-and-share.jpg);
+.for_imgs{
+    width: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
+    padding: 32%;  
+}
+.img{
+    background-image: url(./assets/mobile/create-and-share.jpg);
 }
 .img2{
-    width: 375px;
-    min-height:285px;
     background-image: url(./assets/mobile/beautiful-stories.jpg);
-    background-repeat: no-repeat;
 }
 .img3{
-    width: 375px;
-    min-height: 271px;
     background-image: url(./assets/mobile/designed-for-everyone.jpg);
-    background-repeat: no-repeat;
 }
 .black_h1{
     color: var(--pure-white) ;
@@ -57,6 +56,7 @@ main{
     color: var(--pure-black) ;
     opacity: 60%;
     padding: 16px 0px 32px;
+    width: 318px;
 }
 .black_p{
     color:var(--light-grey);
@@ -77,6 +77,7 @@ a:hover{
 }
 .black_a{
     color:var(--light-grey); 
+    width: 90%;
 }
 .four_a{
     justify-content: space-between;
@@ -113,6 +114,9 @@ a:hover{
     position: relative;
     transition: 0.3s;
     z-index: 0;
+    padding: 63% 8.5% 10.7%;
+    width: 100%;
+    background-size: cover;
 }
 .story::after{
     content: "";
@@ -144,25 +148,21 @@ a:hover{
 }
 .mountains{
     background-image:url(../stories/assets/mobile/mountains.jpg) ;
-    padding: 236px 14px 34px 41px;
 }
 .sunset{
     background-image: url(../stories/assets/mobile/cityscapes.jpg);
-    padding: 221px 14px 50px 41px;
 }
 .voyage{
-    background-image: url(../stories/assets/mobile/18-days-voyage.jpg);
-    padding: 342px 23px 40px 33px;;
-    background-size: cover;
+    background-image: url(../stories/assets/mobile/18-days-voyage.jpg);  
 }
 .architect{
     background-image: url(../stories/assets/mobile/architecturals.jpg);
-    padding: 194px 14px 77px 41px;
 }
 .line{
     width:318px;
     height: 1px;
     background-color:var(--light-grey);
+    width: 90%;
 }
 .third_h1{
     text-align: center;
@@ -193,6 +193,7 @@ a:hover{
     .for_row1,.for_row3{
         display: flex;
         flex-direction: row-reverse;
+        width: 100%;
     }
     .for_row2,.for_row{
         display: flex;
@@ -207,12 +208,14 @@ a:hover{
     .black_h1{
         font-size: 4em;
     }
+
     .black_div,.white_div1,.white_div2{
         width: 495px;
         height: 650px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
     .white_div1,.white_div2{
         height: 600px;
@@ -230,6 +233,7 @@ a:hover{
     .img,.img2,.img3{
         background-repeat: no-repeat;
         width: 273px;
+        padding: 17%;
     }
     .img{
         background-image: url(./assets/tablet/create-and-share.jpg);
@@ -239,33 +243,27 @@ a:hover{
     }
     .img3{
         background-image: url(./assets/tablet/designed-for-everyone.jpg);
+        
     }
     .mountains{
         background-image: url(../stories/assets/desktop/mountains.jpg);
-        padding: 327px 14px 34px 28px;
     }
     .architect{
         background-image: url(../stories/assets/desktop/architecturals.jpg);
-        padding: 344px 14px 34px 28px;
     }
     .voyage{
         background-image: url(../stories/assets/desktop/18-days-voyage.jpg);
-        padding: 342px 23px 40px 19px;
     }
     .sunset{
         background-image: url(../stories/assets/desktop/cityscapes.jpg);
-        padding: 327px 14px 34px 28px;
     }
     .story{
-        width: 384px;
+        width: 100%;
         background-size: cover;
+        padding: 100% 7% 7% 7%
     }
     .line{
         width: 302px;
-    }
-    .four_a{
-        gap: 167px;
-        justify-content: start;
     }
     .third_p{
         width: 32.7em;
@@ -274,18 +272,20 @@ a:hover{
 @media(min-width:1440px){
     .img{
         background-image: url(./assets/desktop/create-and-share.jpg);
+      
     }
     .img2{
         background-image: url(./assets/desktop/beautiful-stories.jpg);
+        
     }
     .img3{
         background-image: url(./assets/desktop/designed-for-everyone.jpg); 
     }
-    .black_div,.white_div1,.white_div2{
-        width: 610px;
+    .black_div{
+        width: 60%;
     }
-    .img,.img2,.img3{
-        width: 830px;
+    .for_imgs{
+        width: 120%;
     }
     .black_h1,.white_h1{
         font-size: 4em;
@@ -305,11 +305,9 @@ a:hover{
         top: 22rem;
     }
     .second_div{
-        display: flex;
+        grid-template-columns: repeat(4, 1fr);
     }
-    .story{
-        width: 36em;
-    }
+
     .third_div{
         display: flex;
         align-items: center;
