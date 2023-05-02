@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 main{
     margin-top: 7.2rem;
@@ -262,9 +263,6 @@ a:hover{
         background-size: cover;
         padding: 100% 7% 7% 7%
     }
-    .line{
-        width: 302px;
-    }
     .third_p{
         width: 32.7em;
     }
@@ -310,9 +308,10 @@ a:hover{
 
     .third_div{
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 120px;
+        align-items: baseline;
+        justify-content: center;
+        gap: 3rem;
+        padding-bottom: 5rem;
     }
     .third_p{
         width: 370px;
