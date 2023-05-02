@@ -22,12 +22,14 @@ main img {
   display: block;
 }
 .img {
-  width: 375px;
+  width: 100vw;
   min-height: 294px;
   background-image: url(./assets/mobile/moon-of-appalacia.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .main-info {
+  width: 100vw;
   background-color: var(--pure-black);
   color: var(--pure-white);
 }
@@ -39,9 +41,6 @@ main img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.main-info {
-  width: 375px;
 }
 .main-paragraphs {
   padding: 4.8rem 0 4.8rem 2.9rem;
@@ -137,8 +136,10 @@ a:hover {
   margin: 0;
 }
 .story {
+  padding: 57% 11% 10.7% 11%;
   background-repeat: no-repeat;
-  width: 375px;
+  width: 100vw;
+  background-size: cover;
   position: relative;
   transition: 0.3s;
   z-index: 0;
@@ -182,71 +183,55 @@ a:hover {
 }
 .mountains {
   background-image: url(../stories/assets/mobile/mountains.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .sunset {
   background-image: url(../stories/assets/mobile/cityscapes.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .voyage {
   background-image: url(../stories/assets/mobile/18-days-voyage.jpg);
-  padding: 214px 23px 40px 41px;
   background-size: cover;
 }
 .architect {
   background-image: url(../stories/assets/mobile/architecturals.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .world-tour {
   background-image: url(../stories/assets/mobile/world-tour.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .unforeseen {
   background-image: url(../stories/assets/mobile/unforeseen-corners.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .lion {
   background-image: url(../stories/assets/mobile/king-on-africa.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .trip {
   background-image: url(../stories/assets/mobile/trip-to-nowhere.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .sea {
   background-image: url(../stories/assets/mobile/rage-of-the-sea.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .horse {
   background-image: url(../stories/assets/mobile/running-free.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .waves {
   background-image: url(../stories/assets/mobile/behind-the-waves.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .pink {
   background-image: url(../stories/assets/mobile/calm-waters.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .galaxy {
   background-image: url(../stories/assets/mobile/milky-way.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .forest {
   background-image: url(../stories/assets/mobile/dark-forest.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .orange {
   background-image: url(../stories/assets/mobile/somwarpet.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .blue {
   background-image: url(../stories/assets/mobile/land-of-dreams.jpg);
-  padding: 214px 23px 40px 41px;
 }
 .line {
-  width: 318px;
+  width: 100%;
   height: 1px;
   background-color: var(--light-grey);
 }
@@ -262,7 +247,6 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
   .img {
-    width: 768px;
     height: 650px;
     background-image: url(./assets/tablet/moon-of-appalacia.jpg);
   }
@@ -270,7 +254,6 @@ a:hover {
     background-color: transparent;
     position: absolute;
     width: 100%;
-    max-width: 768px;
   }
   .main-paragraphs {
     padding: 12.2rem 34.2rem 12.2rem 3.9rem;
@@ -282,30 +265,26 @@ a:hover {
     width: 38ch;
   }
   .second_div {
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .story {
-    width: 384px;
+    width: 100%;
     background-size: cover;
-  }
-  .line {
-    width: 302px;
+    padding: 88.5% 11% 10.4% 11%;
   }
   .four_a {
-    gap: 167px;
-    justify-content: start;
+    justify-content: space-between;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .img {
-    width: 1440px;
+    width: 100vw;
     background-image: url(./assets/desktop/moon-of-appalacia.jpg);
   }
-  .main-info {
-    max-width: 1440px;
-  }
+
   .main-paragraphs {
     padding-left: 11.2rem;
   }
@@ -313,76 +292,56 @@ a:hover {
     grid-template-columns: repeat(4, 1fr);
   }
   .story {
-    width: 360px;
+    width: 100%;
+    padding: 94.5% 11.1% 11.1% 11.1%;
   }
-  .line {
-    width: 280px;
-  }
-  .four_a {
-    gap: 147px;
-  }
+
   .mountains {
     background-image: url(../stories/assets/desktop/mountains.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .sunset {
     background-image: url(../stories/assets/desktop/cityscapes.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .voyage {
     background-image: url(../stories/assets/desktop/18-days-voyage.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .architect {
     background-image: url(../stories/assets/desktop/architecturals.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .world-tour {
     background-image: url(../stories/assets/desktop/world-tour.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .unforeseen {
     background-image: url(../stories/assets/desktop/unforeseen-corners.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .lion {
     background-image: url(../stories/assets/desktop/king-on-africa.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .trip {
     background-image: url(../stories/assets/desktop/trip-to-nowhere.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .sea {
     background-image: url(../stories/assets/desktop/rage-of-the-sea.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .horse {
     background-image: url(../stories/assets/desktop/running-free.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .waves {
     background-image: url(../stories/assets/desktop/behind-the-waves.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .pink {
     background-image: url(../stories/assets/desktop/calm-waters.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .galaxy {
     background-image: url(../stories/assets/desktop/milky-way.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .forest {
     background-image: url(../stories/assets/desktop/dark-forest.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .orange {
     background-image: url(../stories/assets/desktop/somwarpet.jpg);
-    padding: 340px 23px 40px 40px;
   }
   .blue {
     background-image: url(../stories/assets/desktop/land-of-dreams.jpg);
-    padding: 340px 23px 40px 40px;
   }
 }
